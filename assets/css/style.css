@@ -320,7 +320,12 @@ body {
 }
 
 
+.fade-in {animation: fade-in 1s ease forwards;}
 
+@keyframes fade-in{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 /* Header */
 
 .header .btn-primary .span {
