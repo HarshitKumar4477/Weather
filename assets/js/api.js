@@ -12,8 +12,8 @@ const apiKey = "206a9f2144776674277ec4a29a33bcb4";
 
 export const fetchData = (URL , callback)=>{
     fetch(`${URL}&appid=${apiKey}`)
-    .then((res) => res.json())
-    .then((data) => callback(data));
+    .then(res => res.json())
+    .then(data => callback(data));
 }
 
 export const url = {

@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- js link -->
+    <script src="./assets/js/route.js" type="module"></script>
 </head>
 
 <body>
@@ -75,7 +76,7 @@
                 <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
                     <span class="material-symbols-outlined m-icon icon">search</span>
                 </button>
-                <a href="#/weather?lat=51.5073219&lon=0.1276474" class="btn-primary has-state" data-current-location-btn>
+                <a href="#/current-weather" class="btn-primary has-state" data-current-location-btn>
                     <img src="./assets/weather/my_location_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""
                         class="m-icon">
 
@@ -97,30 +98,6 @@
                 <!-- Current weather -->
 
                 <section class="section current-weather" aria-label="current-weather"  data-current-weather>
-                    <!-- <div class="card card-lg current-weather-card">
-                        <h2 class="title-2 card-title">Now</h2>
-                        <div class="weaper">
-                            <p class="heading">25&deg;<sup>c</sup></p>
-
-                            <img src="./assets/weather/01d.png" alt="OverCast Clouds" class="weather-icon">
-                        </div>
-                        <p class="body-3">Overcast Clouds</p>
-
-                        <ul class="meta-list">
-                            <li class="meta-item">
-                                <span class="material-symbols-outlined m-icon">
-                                    calendar_today
-                                </span>
-                                <p class="title-3 meta-text">Thursday 16, Feb</p>
-                            </li>
-                            <li class="meta-item">
-                                <span class="material-symbols-outlined m-icon">
-                                    location_on
-                                </span>
-                                <p class="title-3 meta-text">London, GB</p>
-                            </li>
-                        </ul>
-                    </div> -->
                 </section>
 
                 <!-- 
@@ -134,9 +111,6 @@
 
             <div class="content-right">
                 <section class="section highlights" aria-labelledby="highlights-label" data-highlights>
-                    <!-- <div class="card card-lg">
-                       
-                    </div> -->
 
                 </section>
 
@@ -171,8 +145,12 @@
 
 <section class="error-content" data-error-content>
 
-    <h2 class="heading">404</h2>
+    <div>
+        <img src="./assets/message/not-found.png" alt="error page" width="305" height="300">
+    </div>
 
+    <!-- <h2 class="heading">404</h2> -->
+<br>
     <p class="body-1">Page not found</p>
 
     <a href="#/weather?lat=51.5073219&lon=0.1276474" class="btn-primary">
@@ -181,7 +159,7 @@
 </section>
 
 <script type="module" src="./assets/js/app.js"></script>
-<script src="./assets/js/route.js" type="module"></script>
+
 </body>
 
 </html>
