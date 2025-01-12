@@ -103,7 +103,7 @@ const errorContent = document.querySelector("[data-error-content]")
  */
 
 export const updateWeather = function (lat, lon) {
-    loading.style.display = "grid";
+    // loading.style.display = "grid";
     // container.style.overflowY = "hidden";
     //  container.classList.remove("fade-in");
     errorContent.style.display = "none";
@@ -288,7 +288,7 @@ export const updateWeather = function (lat, lon) {
                                         airwave
                                     </span>
                                     <p class="title-1">
-                                      ${pressure}  <sub>hPa</sub>
+                                      ${pressure}<sub>hPa</sub>
                                     </p>
                                 </div>
 
@@ -439,7 +439,7 @@ export const updateWeather = function (lat, lon) {
                      forecastSection.querySelector("[data-forecast-list]").appendChild(li);
                  }
 
-            loading.style.display = "none";
+            // loading.style.display = "none";
             // container.style.overflowY = "overlay";
             // container.classList.add("fade-in");
                 

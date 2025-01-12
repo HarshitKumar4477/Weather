@@ -12,9 +12,8 @@ const apiKey = "206a9f2144776674277ec4a29a33bcb4";
 
 export const fetchData = (URL , callback)=>{
     fetch(`${URL}&appid=${apiKey}`)
-    .then(res => res.json())
-    .then(data => callback(data));
-
+    .then((res) => res.json())
+    .then((data) => callback(data));
 }
 
 export const url = {
@@ -27,7 +26,7 @@ export const url = {
     }
     ,
     airPollution(lat , lon){
-        return `https://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}$&units=metric`
+        return `http://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}`
     }
     ,
     reverseGeo(lat , lon){

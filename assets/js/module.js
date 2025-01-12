@@ -56,7 +56,7 @@ export const getTime = (timeUnix,timeZone)=>{
     const sec = date.getUTCSeconds();
     const period = hours >= 12 ? "PM" : "AM"
 
-    return `${hours % 12 || 12} : ${mins} : ${sec} ${period}`;
+    return `${hours % 12 || 12}:${mins} ${period}`;
 }
 
 /**
